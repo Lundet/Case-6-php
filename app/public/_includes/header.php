@@ -3,6 +3,6 @@
 </header>
 
 <nav>
-    <a href="#">Start</a> | <a href="#">Logga in</a> | <a href="#">Logga ut</a> | <a href="template.php">Template</a>
+    <a href="start.php">Start</a> | <a href="login.php">Logga in</a> | <a href="register.php">Registrera</a> | <a href="logout.php">Logga ut</a>
 </nav>
 <hr>
