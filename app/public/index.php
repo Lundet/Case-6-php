@@ -1,7 +1,12 @@
 <?php
 
-// en variabel i php inleds med dollartecken
+
+declare(strict_types=1);
+session_start();
+include "_includes/global-functions.php";
+include "_includes/database-connection.php";
 $title = "En webbsida med PHP";
+create_user_table($pdo);
 
 ?>
 
