@@ -28,5 +28,20 @@ $sql = "CREATE TABLE IF NOT EXISTS `user` (
 
 $pdo->exec($sql);
 }
+function create_book_table($pdo) {
+    $sqlStatement = "CREATE TABLE IF NOT EXISTS `book` (
+        `book_id` INT(11) AUTO_INCREMENT,
+        `title` VARCHAR(255) NOT NULL,
+        `author` VARCHAR(255) NOT NULL,
+        `year_published` YEAR,
+        `review` TEXT,
+        `created_at` DATETIME,
+        `user_id` INT(11),
+        PRIMARY KEY (`book_id`),
+        FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci";
 
+    $pdo->exec($sqlStatement);
+    
+}
 ?>

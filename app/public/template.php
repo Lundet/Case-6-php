@@ -27,7 +27,7 @@ $title = "Template";
     ?>
 
 
-    <h1><?= $title ?></h1>
+    <h1><?= $title ?> YO HOW SICK</h1>
 
 
     <?php
