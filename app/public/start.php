@@ -24,7 +24,7 @@ create_book_table($pdo);
 
     <h1><?php echo "Hello world"; ?></h1>
 
-    <a href="template.php">Template</a> - en mallfil som kan användas för olika sidor i projektet.
+    <a href="login.php">Template</a> - en mallfil som kan användas för olika sidor i projektet.
 
 </body>
 </html>

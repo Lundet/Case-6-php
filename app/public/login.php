@@ -3,6 +3,7 @@ session_start();
 
 require_once "_includes/database-connection.php";
 create_user_table($pdo);
+create_book_table($pdo);
 
 // Rest of the code...
 ?>
@@ -67,7 +68,7 @@ create_user_table($pdo);
 
 
             // if OK redirect to bird page
-            header("location: template.php");
+            header("location: review.php");
         } catch (PDOException $err) {
             echo "There was a problem: " . $err->getMessage();
         }
