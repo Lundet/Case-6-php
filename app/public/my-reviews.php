@@ -45,7 +45,11 @@ create_book_table($pdo);
             <p>Skapad den: <?= $review['created_at'] ?></p>
             <p>Recension: <?= $review['review'] ?></p>
             <a href="edit-review.php"><button class="edit-button">Edit</button></a>
-            <a href="delete-review.php"><button class="delete-button">Delete</button></a>
+
+            <a href="delete-review.php?review_id=<?= $review['book_id'] ?>"><button class="delete-button">Delete</button></a>
+
+
+
         </div>
         
 
