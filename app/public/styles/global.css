@@ -1,8 +1,8 @@
-
 body {
     background-color: #f2f2f2;
     color: #333333;
     font-family: Arial, sans-serif;
+
 }
 
 h1 {
@@ -23,6 +23,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 150px;
 }
 
 button:hover {
@@ -35,9 +36,11 @@ input {
     border: 1px solid #cccccc;
     border-radius: 3px;
 }
-label{
+
+label {
     margin-top: 20px;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -50,7 +53,34 @@ form a {
     height: auto;
 }
 
-form button {
+form .button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
     margin-top: 20px;
+    width: 150px;
+  }
+div.container{
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: lightblue;
 }
+.container {
+    text-align: center;
+  }
 
+.container p
+ {
+    text-align: left;
+  }
+.edit-button{
+width: 100px;
+}
+.delete-button{
+    width: 100px;
+    background-color: #dc3545;
+}
+button.delete-button:hover {
+    background-color: #c82333;
+}

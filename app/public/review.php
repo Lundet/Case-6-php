@@ -42,14 +42,11 @@ $username = $_SESSION['username'];
         <input type="text" name="year_published" id="year_published">
 
         
-        <label for="review">Recesion</label>
-        <input type="text" name="review" id="review">
-
-        <label for="created_at">Skapad den</label>
-        <input type="text" name="created_at" id="created_at">
+        <label for="review">Recension</label>
+        <textarea name="review" id="review" rows="5" cols="35"></textarea>
 
 
-        <button type="submit">Skicka in</button>
+        <button class="button"type="submit">Skicka in</button>
     </form>
     <?php
 

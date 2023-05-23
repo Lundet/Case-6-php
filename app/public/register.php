@@ -22,15 +22,15 @@ require_once "_includes/database-connection.php";
 
     ?>
 
-    <h1>Register</h1>
+    <h1>Vänligen registrera dig</h1>
     <form action="" method="post">
-        <label for="username">Användarnamn </label>
+        <label for="username">Användarnamn: </label>
         <input type="text" name="username" id="username">
 
         <label for="password">Lösenord: </label>
         <input type="password" name="password" id="password">
 
-        <button type="submit">Registrera</button>
+        <button class="button" type="submit">Registrera</button>
     </form>
     <?php
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -49,7 +49,7 @@ require_once "_includes/database-connection.php";
                 header("location: login.php");
             }
         } catch (PDOException $err) {
-            echo "There was a problem: " . $err->getMessage();
+            echo "Användare finns redan";
         }
     }
     ?>

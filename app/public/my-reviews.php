@@ -38,15 +38,16 @@ create_book_table($pdo);
 
 
     <?php foreach ($reviews as $review) { ?>
-        <div>
+        <div class="container">
             <h2><?= $review['title'] ?></h2>
             <p>Författare: <?= $review['author'] ?></p>
-            <p>Årtal: <?= $review['year_published'] ?></p>
-            <p>Recension: <?= $review['review'] ?></p>
+            <p>Årtal: <?= $review['year_published'] ?></p>           
             <p>Skapad den: <?= $review['created_at'] ?></p>
+            <p>Recension: <?= $review['review'] ?></p>
+            <a href="edit-review.php"><button class="edit-button">Edit</button></a>
+            <a href="delete-review.php"><button class="delete-button">Delete</button></a>
         </div>
-        <a href="edit-review.php">Edit</a>
-        <a href="delete-review.php?">Delete</a>
+        
 
     <?php
     }

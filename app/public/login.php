@@ -34,7 +34,7 @@ create_book_table($pdo);
         <label for="password">Lösenord: </label>
         <input type="password" name="password" id="password">
 
-        <button type="submit">Logga in</button>
+        <button class="button" type="submit">Logga in</button>
     </form>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -52,13 +52,13 @@ create_book_table($pdo);
 
             // no user found with these credentials
             if (!$user) {
-                header("location: login.php");
+                header("location: register.php");
                 exit();
             }
 
             $is_correct_password = password_verify($form_password, $user['password']);
             if (!$is_correct_password) {
-                header("location: login.php");
+                echo "Fel Lösenord";
                 exit();
             }
 
