@@ -15,10 +15,12 @@ create_book_table($pdo);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
     <title>Mina recensioner</title>
 </head>
 
 <body>
+
     <?php
     // tar user id från sessionen och tar allt från book som är skapad av user idt.
     $user_id = $_SESSION['user_id'];
@@ -33,15 +35,21 @@ create_book_table($pdo);
 
     <h1>Mina recensioner</h1>
 
+
     <?php foreach ($reviews as $review) { ?>
         <div>
             <h2><?= $review['title'] ?></h2>
             <p>Författare: <?= $review['author'] ?></p>
             <p>Årtal: <?= $review['year_published'] ?></p>
             <p>Recension: <?= $review['review'] ?></p>
-            <p>Skapad den: <?= $review['created_at']?></p>
+            <p>Skapad den: <?= $review['created_at'] ?></p>
         </div>
-    <?php } ?>
+        <a href="edit-review.php">Edit</a>
+        <a href="delete-review.php?">Delete</a>
+
+    <?php
+    }
+    ?>
 
 
 
