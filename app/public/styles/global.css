@@ -31,8 +31,26 @@ button:hover {
 
 input {
     padding: 5px;
+    margin: 20p;
     border: 1px solid #cccccc;
     border-radius: 3px;
 }
+label{
+    margin-top: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+form a {
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+}
+
+form button {
+    margin-top: 20px;
+}
 
