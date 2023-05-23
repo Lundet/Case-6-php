@@ -3,12 +3,18 @@
 </header>
 
 <nav>
-    <a href="start.php">Start</a>
+    <!-- Om användare inte är inloggad -->
     <?php if (!isset($_SESSION['username'])) : ?>
-        | <a href="login.php">Logga in</a> | <a href="register.php">Registrera</a>
+        <a href="index.php">Start</a> | <a href="login.php">Logga in</a> | <a href="register.php">Registrera</a>
+        
+    <!-- Om användare är inloggad -->
     <?php else : ?>
-        | <a href="review.php">Recension</a> <a href="logout.php">Logga ut</a>
+        <a href="review.php">Recension</a> | <a href="my-reviews.php">Mina recensioner</a> | <a href="logout.php">Logga ut</a>
     <?php endif; ?>
-    <p>Inloggad som <?= $_SESSION['username'] ?></p>
+
+    <!-- Om användarenamn finns, skriv ut -->
+    <?php if (isset($_SESSION['username'])) : ?>
+        <p>Inloggad som <?= $_SESSION['username'] ?></p>
+    <?php endif; ?>
 </nav>
 <hr>

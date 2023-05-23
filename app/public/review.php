@@ -7,9 +7,7 @@ session_start();
 include "_includes/database-connection.php";
 include "_includes/global-functions.php";
 
-// en variabel i php inleds med dollartecken
 $username = $_SESSION['username'];
-$title = "Recension";
 
 ?>
 
@@ -31,7 +29,7 @@ $title = "Recension";
     ?>
 
 
-    <h1><?= $title ?> YO HOW SICK</h1>
+    <h1>Lägg till en recension</h1>
     <form action="" method="post">
         <label for="title">Titel</label>
         <input type="text" name="title" id="title">
