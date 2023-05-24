@@ -1,5 +1,5 @@
 <hr>
-<footer>
+<footer class="footer">
     
     Footer...
     <?= render_copyright() ?>

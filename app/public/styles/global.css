@@ -84,3 +84,10 @@ width: 100px;
 button.delete-button:hover {
     background-color: #c82333;
 }
+.footer {
+    background-color: #1c73d0;
+    padding: 20px;
+    text-align: center;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
