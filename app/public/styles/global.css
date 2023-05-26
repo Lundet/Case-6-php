@@ -1,13 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    
     background-color: #f2f2f2;
     color: #333333;
     font-family: Arial, sans-serif;
-
 }
 
 h1 {
     font-size: 24px;
     text-align: center;
+    margin-top: 4rem;
     margin-bottom: 20px;
 }
 
@@ -42,13 +49,14 @@ label {
 }
 
 form {
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 form a {
-    margin-top: 20px;
+    margin-top: 2rem;
     width: auto;
     height: auto;
 }
@@ -60,33 +68,52 @@ form .button {
     border-radius: 5px;
     margin-top: 20px;
     width: 150px;
-  }
-div.container{
-    padding: 30px;
-    margin-bottom: 20px;
-    background-color: lightblue;
 }
+
+div.container {
+    color: #000000;;
+    border-radius: 2rem;
+    padding: 20px;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    background-color: #3994e1;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    
+}
+
 .container {
     text-align: center;
+}
+
+div.container p {
+    text-align: left;
+}
+
+.edit-button {
+    background-color: #1c73d0;
+    width: 100px;
+}
+button.edit-button:hover {
+    background-color: #0f5ea8;
   }
 
-.container p
- {
-    text-align: left;
-  }
-.edit-button{
-width: 100px;
-}
-.delete-button{
+.delete-button {
     width: 100px;
-    background-color: #dc3545;
+    background-color: #D01C1C;
 }
+
 button.delete-button:hover {
-    background-color: #c82333;
+    background-color: #950a0a;
+    ;
 }
+
 .footer {
     background-color: #1c73d0;
     padding: 20px;
+    margin-top: auto;
     text-align: center;
     color: #fff;
     font-family: Arial, sans-serif;
