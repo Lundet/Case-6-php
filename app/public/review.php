@@ -49,7 +49,7 @@ $username = $_SESSION['username'];
         <button class="button"type="submit">Skicka in</button>
     </form>
     <?php
-
+    //Lägger till recension till book tabel
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $form_title = $_POST['title'];
         $form_author = $_POST['author'];
@@ -60,12 +60,6 @@ $username = $_SESSION['username'];
         $result = $pdo->query($sql);
     }
     ?>
-
-
-
-
-
-
 
     <?php
     include "_includes/footer.php";

@@ -50,7 +50,7 @@ create_book_table($pdo);
 
             $user = $result->fetch();
 
-            // no user found with these credentials
+            // Om ingen user hittas skicka till register
             if (!$user) {
                 header("location: register.php");
                 exit();
@@ -69,7 +69,7 @@ create_book_table($pdo);
             $_SESSION['user_id'] = $user['id'];
 
 
-            // if OK redirect to bird page
+            //om det är okej skicka till review.php
             header("location: review.php");
         } catch (PDOException $err) {
             echo "There was a problem: " . $err->getMessage();

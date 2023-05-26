@@ -40,6 +40,10 @@ require_once "_includes/database-connection.php";
             echo "Lösenordet måste vara minst 4 tecken";
             exit();
         }
+        if ($form_username === "lasse" || $form_username ==="Lasse"){
+            echo "Lasse får inte vara med.";
+            exit();
+        }
         $sql_statement = "INSERT INTO `user` (`username`, `password`) VALUES ('$form_username', '$form_hashed_password')";
 
         try {
