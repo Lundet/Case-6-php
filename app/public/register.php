@@ -32,6 +32,7 @@ require_once "_includes/database-connection.php";
 
         <button class="button" type="submit">Registrera</button>
     </form>
+    
     <?php
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $form_username = $_POST["username"];
