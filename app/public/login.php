@@ -70,7 +70,7 @@ create_book_table($pdo);
 
 
             //om det är okej skicka till review.php
-            header("location: review.php");
+            header("location: all-reviews.php");
         } catch (PDOException $err) {
             echo "There was a problem: " . $err->getMessage();
         }
