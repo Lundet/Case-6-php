@@ -3,8 +3,8 @@
 
 declare(strict_types=1);
 session_start();
-include 'app/public/includes/global-functions.php';
-include 'app/public/includes/database-connection.php';
+include "_includes/global-functions.php";
+include "_includes/database-connection.php";
 
 
 $title = "En webbsida med PHP";
