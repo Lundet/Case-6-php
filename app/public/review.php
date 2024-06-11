@@ -32,13 +32,13 @@ $username = $_SESSION['username'];
     <h1>Lägg till en recension</h1>
     <form action="" method="post">
         <label for="title">Titel</label>
-        <input type="text" name="title" id="title">
+        <input type="text" name="title" id="title" required minlength="3">
 
         <label for="author">Författare </label>
-        <input type="text" name="author" id="author">
+        <input type="text" name="author" id="author" required minlength="2">
 
         <label for="year_published">Årtal</label>
-        <input type="text" name="year_published" id="year_published">
+        <input type="text" name="year_published" id="year_published" required minlength="4">
 
         
         <label for="review">Recension</label>
