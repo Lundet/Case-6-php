@@ -17,6 +17,13 @@ The Book Review App is a web application designed to manage and showcase book re
 - **Session Management**: Implemented PHP sessions for user authentication, ensuring secure login, review management, and user logout.
 
 ### **Front-End Development**
+
+- **Responsive Design**: Applied CSS to ensure the application is mobile-first and responsive across various devices and screen sizes.
+![image](https://github.com/user-attachments/assets/f3384644-7db7-49b1-86f7-cdbb556eb59b)
+![image](https://github.com/user-attachments/assets/9c5643c4-0a42-4aa1-981e-57c9b9d6f514)
+
+
+
 - **User Interface**: Designed a functional and clean UI using HTML and CSS, focusing on usability and accessibility.
 
 ### **Best Practices and Code Quality**
@@ -58,6 +65,10 @@ The Book Review App is a web application designed to manage and showcase book re
 ## Screenshots
 
 ![image](https://github.com/user-attachments/assets/5ddb5ca5-fdcd-4387-b3de-c6586f51ed85)
+![image](https://github.com/user-attachments/assets/971cfa38-8e6e-4bb7-9682-e896922c1f5e)
+
+![image]
+
 
 
 ## Conclusion
