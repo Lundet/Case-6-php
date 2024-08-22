@@ -63,12 +63,12 @@ The Book Review App is a web application designed to manage and showcase book re
     - Open your browser and navigate to `http://localhost:8088`.
 
 ## Screenshots
-
-![image](https://github.com/user-attachments/assets/5ddb5ca5-fdcd-4387-b3de-c6586f51ed85) ![image](https://github.com/user-attachments/assets/041eb8bd-1f18-426c-a30e-6a4415bbadf3)
+![image](https://github.com/user-attachments/assets/041eb8bd-1f18-426c-a30e-6a4415bbadf3)
 
 ![image](https://github.com/user-attachments/assets/971cfa38-8e6e-4bb7-9682-e896922c1f5e)
 
-![image]
+![image](https://github.com/user-attachments/assets/a8206fdc-6560-4053-a20a-309f5e00ec6c)
+
 
 
 
